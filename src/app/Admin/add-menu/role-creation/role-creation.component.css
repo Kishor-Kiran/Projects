@@ -1,0 +1,28 @@
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    float: left;
+    top: 15%;
+    left: 30%;
+    font-weight: bold;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+  
+  input,textarea {
+    width: calc(100% - 10px);
+    padding: 8px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .row{
+  margin-top: 10px;
+  }
+  button{
+    margin: 20px;
+  }
+  

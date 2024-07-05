@@ -1,0 +1,70 @@
+#backgroud{
+    background-image: url(src/assets/MAP.png) ;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    margin-top: 50px;
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+  }
+  
+  .register-card {
+  
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: calc(100% - 10px);
+    padding: 8px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  button:not(:disabled):hover {
+    background-color: #2980b9;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  

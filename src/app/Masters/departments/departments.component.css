@@ -1,0 +1,22 @@
+.card{
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(249, 253, 253);
+    
+}
+.container{
+    margin-top: 10%;
+    width: 30%;
+   
+}
+
+input,select,option {
+    width: calc(100% - 10px);
+    padding: 8px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 10px                           ;
+  }
+  .row{
+    line-height: 3;
+  }

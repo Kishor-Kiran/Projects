@@ -1,0 +1,76 @@
+<app-header></app-header>
+<div class="container">
+
+
+    <!-- Contact Us -->
+<div style="width: 100%; margin-top: 200px;">
+   
+    <div id="ContactUs" style=" height: '100vh' ; ">
+      <div class='row' style=" height: '100%'; width: 100%; ">
+        <div class='col-md-6' style=" background-color: 'black'; text-align: 'center' " >
+          <div style=" margin-top: '50px'; padding-left: '50px'; padding-right: '50px' ">
+            <h3 style=" font-family: 'Open Sans sans-serif'; color: 'white' " >Get in touch with us!</h3>
+            <p style=" font-family: 'Open Sans sans-serif'; color: 'white'; font-size: '18px'; text-align: 'justify'; margin-top: '25px' ">   Do you spend most of your IT budget on maintaining your current system? Many companies find that constant maintenance eats into their budget for new technology. By outsourcing your IT management to us; you can focus on what you do best--running your business. </p>
+          </div>
+          <div style=" margin-top: '40px'; text-align: 'left'; padding-left: '50px'; padding-right: '50px' ">
+            <h4 style=" font-family: 'Open Sans sans-serif'; color: 'white' "> Send Message</h4>
+
+            <div style=" margin-top: '5px' ">
+              <form onSubmit={sendEmail}>
+                <div class="col-md-12">
+                <div class='row' style=" padding: '30px'; padding-bottom: '20px' ; ">
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class='input' placeholder='Name' name = "name" type='text' style=" width: '100%'; height: '50px' ">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <input class='input' formControlName="EmailID" placeholder='Email ID' name = "user_email" type='email' style=" width: '100%'; height: '50px' "> 
+                    </div>
+
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                <div class='row' style=" padding-left: '30px'; padding-bottom: '20px'; padding-right: '30px' ">
+                  <div class='col-md-12'>
+                    <textarea placeholder='Message' formControlName="TextAreaMessage"  name = "message" class='input' style=" width: calc(100% - 10px); height: '120px';top:20% "></textarea>
+                  </div>
+                </div>
+                </div>
+                <div class='row' style=" padding-left: '30px'; padding-bottom : '30px'; padding-right: '30px' ">
+                  <div class='col-md-12' style=" text-align: 'center'; margin : 0px'; padding-top: '0px' ">
+                    <button value="Send" class='sendButton'>Send</button>
+                  </div>
+                </div>
+              
+              </form>
+
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="col-md-6"   >
+        <div class="col-md-12 " >
+          <iframe
+            class='map'
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.2412481073725!2d77.56218997216402!3d12.932087520267515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15889d8aa355%3A0x9471bdc07edf8484!2sThyagaraja%20Nagar%2C%20Basavanagudi%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1657392593131!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            frameBorder="0"
+         
+            allowFullScreen=""
+            aria-hidden="false"
+            tabIndex="0" >
+          </iframe>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,37 @@
+
+<div class="container">
+  <div class="register-card" >
+    <h2>Role Mapping</h2>
+    <form (ngSubmit)="onSubmit()" [formGroup]="RoleForm">
+      <div class="form-group">
+        <label for="name">User Name</label>
+        <!-- <input id="name" type="text"[(ngModel)]="RoleDetails.name" formControlName="name" required />
+        <div *ngIf="RoleForm.get('name').invalid && RoleForm.get('name').touched">
+          <small class="error">Role Name is required and must be at least 2 characters.</small>
+        </div> -->
+        <select [(ngModel)]="RoleDetails.name" formControlName="name" required >
+            <option value="" style="text-align: center;">---Select---</option>
+            <option  *ngFor="let items of name"> {{items}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Roles</label>
+
+        <select [(ngModel)]="RoleDetails.roles" formControlName="roles" required >
+            <option style="text-align: center;">---Select---</option>
+            <option  *ngFor="let items of roles"> {{items}}</option>
+        </select>
+        <!-- <input id="roles" type="text"  [(ngModel)]="RoleDetails.roles" formControlName="roles" required />
+        <div *ngIf="RoleForm.get('roles').invalid && RoleForm.get('roles').touched">
+          <small class="error">A valid Role is required.</small>
+        </div> -->
+      </div>
+     
+     
+      <button type="submit" [disabled]="!RoleForm.valid" >Submit</button>
+      &nbsp;
+      <button type="cancel" (click)="onCancel()">Cancel</button>
+    </form>
+  </div>
+
+

@@ -1,0 +1,47 @@
+
+<div id="backgroud"></div>
+  <div class="register-container">
+    <div class="register-card">
+      <h2>Register</h2>
+      <form (ngSubmit)="onSubmit()" [formGroup]="RegisterForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" formControlName="name" required />
+          <div *ngIf="RegisterForm.get('name').invalid && RegisterForm.get('name').touched">
+            <small class="error">Name is required and must be at least 2 characters.</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" formControlName="email" required />
+          <div *ngIf="RegisterForm.get('email').invalid && RegisterForm.get('email').touched">
+            <small class="error">A valid email is required.</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mobileNumber">Mobile Number</label>
+          <input id="mobileNumber" type="text" formControlName="mobileNumber" required maxlength="10" />
+          <div *ngIf="RegisterForm.get('mobileNumber').invalid && RegisterForm.get('mobileNumber').touched">
+            <small class="error">A valid Mobile Number is required.</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input id="password" type="password" formControlName="password" required  />
+          <div *ngIf="RegisterForm.get('password').invalid && RegisterForm.get('password').touched">
+            <small class="error">Enter a Valid Password</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input id="confirmPassword" type="password" formControlName="confirmPassword" required />
+          <div *ngIf="RegisterForm.hasError('mismatch') && RegisterForm.get('confirmPassword').touched">
+            <small class="error">Passwords do not match.</small>
+          </div>
+        </div>
+        <button type="submit" [disabled]="!RegisterForm.valid" >Register</button>
+        &nbsp;
+        <button type="cancel" (click)="onCancel()">Cancel</button>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,160 @@
+
+<header class="card"   *ngIf="Route.url !== '/LoginPage' && Route.url !== '/UserRegister'" >
+   <div class="col-md-12">
+    
+    <div class="row">
+    <div class="col-md-6">
+       
+    <nav >
+    
+        <ul>
+            <li class="dropdown" ><a  >Master</a>
+            <ul >
+                <li class="dropdown-two"><a >Areas</a>
+                    <ul>
+                        <li><a  >Link 1<span style="padding-left: 100px;padding-bottom: 10px;font-size: 30px;">&rsaquo;</span></a></li>
+                        <li><a  >link 2</a></li>
+                        <li><a  >link 3</a></li>
+                    </ul>
+                </li>
+                <li><a  >Bank</a></li>
+                <li><a  >Departments</a></li>
+                <li><a  >Category</a></li>
+                <li><a  >Consultants</a></li>
+                <li><a  >Services</a></li>
+                <li><a  >Organizations</a></li>
+                <li><a  >Agency</a></li>
+                <li><a  >Referring Doctors</a></li>
+                <li><a  >Reasons</a></li>
+                <li><a  >Diagnosis</a></li>
+                <li><a  >Consultant Schedule</a></li>
+                <li><a  >Rate Type</a></li>
+                <li><a  >Package Master</a></li>
+                <li><a  >Cghs Mapping Master</a></li>
+                <li><a  >ledger Heads</a></li>
+                <li><a  >Ward Category</a></li>
+                <li><a  >Ward</a></li>
+                <li><a  >Inpatient Charges</a></li>
+                <li><a  >Organization Charges(OP IP)</a></li>
+                <li><a  >TPA Charges (Pkg Billing)</a></li>
+                <li><a  >Main Classification</a></li>
+                <li><a  >Sub Classification</a></li>
+                <li><a  >Material</a></li>
+                <li><a  >Investigation</a></li>
+                <li><a  >Expense heads</a></li>
+                <li><a  >OT Master</a></li>
+            </ul>
+        </li>
+        
+            <li class="dropdown" ><a  >Transaction</a>
+                <ul>
+                    <li class="dropdown-two"><a  >OutPatient-Billing</a></li>
+                    <li><a  >Out Patient Edit</a></li>
+                    <li><a  >Patient Search</a></li>
+                    <li><a  >Inpatient Billing</a></li>
+                    <li><a  >Package Billing</a></li>
+                    <li><a  >Payments</a></li>
+                    <li><a  >OT Scheduling</a></li>
+                    <li><a  >OT User Module</a></li>
+                    <li><a  >Appointment</a></li>
+                    <li><a  >Appointment List</a></li>
+                    <li><a  >Result Entry</a></li>
+                    <li><a  >Discharge Summary</a></li>
+                    <li><a  >Expenses</a></li>
+    
+                </ul>
+            </li>
+            <li class="dropdown" ><a  >Reports</a>
+            <ul>
+                <li><a  >OutPatient</a></li>
+                <li><a  >Inpatient</a></li>
+                <li><a  >Special Report</a></li>
+                <li><a  >Consultant</a></li>
+                <li><a  >Consolidated Report</a></li>
+                <li><a  >Organization Reports</a></li>
+                <li><a  >Master Reports</a></li>
+                <li><a  >Documents</a></li>
+            </ul>
+            </li>
+            <li class="dropdown" ><a  >MIR</a>
+                <ul>
+                    <li><a  >OutPatient Reports</a></li>
+                    <li><a  >Inpatient Reports</a></li>
+                    <li><a  >Management Report</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" ><a  >Utilites</a>
+                <ul>
+                    <li><a  >Security</a></li>
+                    <li><a  >Undischarge Tool</a></li>
+                    <li><a  >MkExe Edit</a></li>
+                    <li><a  >Remove Textfile</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a   >Tools</a>
+                <ul>
+                    <li><a  >Back up</a></li>
+                    <li><a  >TallyPorting</a></li>
+                    <li><a  >Year End</a></li>
+                    <li><a  >Change Password</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+ </div>
+ <div class="col-md-6">
+
+        <div style="position: absolute;right:100px;padding-top: 20px;" > 
+            <p > <b>Welcome {{this.Name}} !</b>
+            </p>
+              </div>
+              <div style="position: absolute;right:30px;"> 
+             
+                 <button style="border: 0px;background-color: white;" (click)="SignupButton()"  >
+                
+              
+                  <div style="display: flex; justify-content: flex-end;height: 50px; width: 50px;  border-radius: 20px;">
+                   <button (mouseover)="mouseoverfunction()" style="
+                       border-radius: 50%;
+                       height: 50px;
+                       width: 50px;
+                       border: none;
+                       background: none;
+                     " class="mr-5">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg>
+                   </button>
+                   
+                   <div (mouseenter)="mouseinfunction()" (mouseleave)="mouseoutfunction()"
+                     class="dropdown-menu dropdown-menu-right mr-4 show"
+                     style="border-color: lightblue; 
+                     width: 250px;
+                     height: 150px;
+                     line-height:20px;
+                      margin-top: 65px; 
+                      padding-top: 30px;
+                      text-align: center;
+                      background-color: rgb(221, 211, 211)" *ngIf="showhidetooltip">
+                     
+                     <p> <b>{{Name}} </b></p>
+                     <br>
+         
+                    
+                       <a  routerLink="/change-password" class="dropdown-item" (click)="changePassword()" style="cursor: pointer" >
+                       <b>Change Password</b></a>
+                       <br>
+                     <a class="dropdown-item" style="cursor: pointer" (click)="logout()">
+                       <b>  Sign Out</b></a>
+                   
+                 </div>
+               </div>
+             </button>
+              </div>
+            </div>
+    </div>
+   </div>
+</header>
+    
+    

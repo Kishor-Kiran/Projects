@@ -1,0 +1,125 @@
+<form (ngSubmit)="OnSubmit()" [formGroup]="patientRegister">
+
+    <div style="text-align: center;margin-left: 10px;margin-right: 10px; padding-top: 150px;">
+        <div class="container">
+        <div >
+        <h2>Registration</h2>
+    <div >
+        <div style="text-align:left ;" >
+            <div class="col-md-12">
+                <div class="row" >
+                  
+                    <div class="col-md-3" >
+                        <label>Patient Name :</label>
+                        <input [(ngModel)]="RegisterPatient.patientName" type="text" placeholder="First name"  formControlName="patientName" >
+                    </div>
+                    
+                        <div class="col-md-3">
+                            <label>Dr. Name :</label>
+                            <select type="date"  [(ngModel)]="RegisterPatient.drName"  formControlName="drName"  >
+                                <option>---Select Dr.Name---</option>
+                                <option>Dr.Prajwal</option>
+                            <option>Dr.Sumkhu hegde</option>
+                            <option>Dr.Srinivas</option>
+                            <option>Dr.Naveen</option>    
+                            </select>
+                         </div>
+                   
+               
+                <div class="col-md-3">
+                    <label>DOB :</label>
+                    <br>
+                    <input type="date" [(ngModel)]="RegisterPatient.dOB"  formControlName="dOB"  >
+                </div>
+                
+                <div class="col-md-2">
+                    <label>Gender :</label>
+                    <br>
+                    <select [ngModel]="RegisterPatient.gender" ngDefaultControl formControlName="gender"  style="width: 70%;">
+                        <option value="">---Select---</option>
+                        <option value="Male">Male</option>
+                    <option value="Female">Female</option>    
+                    </select>
+                </div>
+                <div class="col-md-1" style="margin-left: -50px;">
+                    <label>Age :</label>
+                    <br>
+                    <input type="number" [(ngModel)]="RegisterPatient.Age"  onKeyPress="if(this.value.length==2) return false;"   placeholder="age"  formControlName="Age"    >
+                </div>
+               </div>
+               </div>
+              
+               
+               <div class="row" >
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                <label>Adhar Number :</label>
+    
+                <input type="number" [(ngModel)]="RegisterPatient.adharNumber" formControlName="adharNumber" placeholder="Adhar Number" onKeyPress="if(this.value.length==12) return false;" >
+            </div>
+            
+                <div class="col-md-3">
+                    <label>Mobile Number :</label>
+                    
+                    <input type="number" [(ngModel)]="RegisterPatient.mobileNumber" formControlName="mobileNumber" placeholder="Mobile Number" onKeyPress="if(this.value.length==10) return false;" >
+                </div>
+           
+       
+        <div class="col-md-3">
+            <label>City :</label>
+            <br>
+            <input type="text" [(ngModel)]="RegisterPatient.ciTy"  placeholder="City" formControlName="ciTy" >
+        </div>
+        <div class="col-md-3">
+            <label>State :</label>
+            <br>
+            <input type="text" [(ngModel)]="RegisterPatient.staTe" formControlName="staTe" placeholder="State" >
+        </div>
+       </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+            <label>Address :</label>
+            <br>
+            <textarea placeholder="Enter Address" [(ngModel)]="RegisterPatient.address" formControlName="address"  style="height: 40px;"></textarea>
+        </div>
+        
+            
+       
+    
+    <div class="col-md-3" >
+        <label>Street :</label>
+        <br>
+        <input type="text" formControlName="stReet" [(ngModel)]="RegisterPatient.stReet" placeholder="Street" >
+    </div>
+    <div class="col-md-3">
+        <label> Area :</label>
+        <br>
+        <Input type="text" formControlName="Area" [(ngModel)]="RegisterPatient.Area" placeholder="Area" ngDefaultControl>
+              
+       
+    </div>
+    <div class="col-md-3">
+        <label>Pincode :</label>
+        <br>
+        <Input type="number" [(ngModel)]="RegisterPatient.Pincode" formControlName="Pincode" maxlength=6 ngDefaultControl  placeholder="Pincode" >
+              
+       
+            </div>
+            </div>
+        </div>
+        </div>     
+         
+         <div style="text-align: center;margin-bottom: 10px;">
+            <button   class="btn btn-success" >Save</button>&nbsp;
+            <button class="btn btn-primary" >Edit</button>&nbsp;
+            <button type="reset" class="btn btn-danger" (click)="CancelButton()"  >Close</button>
+        </div>
+        </div>
+    </div>
+        </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,24 @@
+.card{
+    margin-bottom: 10px;
+    background-color: rgb(199, 232, 233);
+}
+.col-md-2{
+    margin-bottom: 10px;
+}
+input,select,textarea,option{
+    width: calc(80% - 10px);
+    padding: 8px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+   border: none;
+}
+.col-md-3{
+    margin-bottom: 10px;
+}
+.card-block{
+    margin-left: 20px;
+}
+label{
+    font-weight: bold;
+}

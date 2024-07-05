@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">Department Creation</div>
+    <form (ngSubmit)="onSubmit()" [formGroup]="departments">
+       
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="">Designation Name :</label>
+                    </div>
+                <div class="col-md-6">
+                    <input formControlName="designationName" [(ngModel)]="designationName" name="designationName">
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-5">
+                    <label for="">Designation Code :</label>
+                </div>
+                <div class="col-md-6">
+                    <input formControlName="designationCode" [(ngModel)]="designationCode" name="designationCode">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="">Department :</label>
+                </div>
+                <div class="col-md-6">
+                    <select formControlName="department" name="department" [(ngModel)]="department" >
+                    <option>Accounts</option>
+                    <option>HR</option>
+                    <option>Service</option>
+                    <option>Development</option>
+                    <option>Admin</option>
+                    <option>Testing</option>
+                </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="">Descipline :</label>
+                </div>
+                <div class="col-md-6">
+                    <input formControlName="descipline" name="descipline" [(ngModel)]="descipline">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="submit"  class="btn btn-primary">Submit</button>
+                   
+                </div>
+                <div class="col-md-6">
+                    <button (click)="ONcancelClick()"  class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+           
+        </div>
+
+           
+        </div>
+   
+    </form>
+</div>
+</div>
